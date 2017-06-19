@@ -24,5 +24,6 @@ RUN echo "deb http://dl.bintray.com/sbt/debian /" | tee -a /etc/apt/sources.list
 
 RUN apt-get update
 RUN apt-get install -y python \
-                       python-pip
+                       python-pip \
+                       mysql-client
 RUN pip install awscli
